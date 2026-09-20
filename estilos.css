@@ -1,21 +1,22 @@
 /* General */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Arial, sans-serif;
   margin: 0;
-  background-color: #f9f9f9;
+  background-color: #f4f6f8;
   color: #333;
 }
 
 /* Banner */
 #hero {
   text-align: center;
-  background: linear-gradient(135deg, #ffe0b2, #ffcc80);
-  padding: 40px 20px;
+  background: linear-gradient(135deg, #ffcc80, #ffb74d);
+  padding: 50px 20px;
+  color: #333;
 }
 
 #hero h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
+  font-size: 2.8em;
+  margin-bottom: 15px;
 }
 
 #hero p {
@@ -26,93 +27,57 @@ body {
 #pets {
   padding: 40px 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
 }
 
 .pet-card {
   background: #fff;
-  border-radius: 10px;
+  border-radius: 12px;
   text-align: center;
-  padding: 15px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  transition: transform 0.2s, box-shadow 0.2s;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer; /* 👈 convierte el cursor en puntero */
 }
 
 .pet-card img {
   width: 100%;
+  height: 200px;
+  object-fit: cover; /* 👈 recorta bien las fotos */
   border-radius: 10px;
+  margin-bottom: 15px;
 }
 
-.pet-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+.pet-card h3 {
+  margin: 10px 0;
+  font-size: 1.4em;
+  color: #444;
+}
+
+.pet-card p {
+  font-size: 0.95em;
+  color: #666;
+  margin-bottom: 15px;
 }
 
 .pet-card button {
   background-color: #ff7043;
   color: white;
   border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
+  padding: 10px 18px;
+  border-radius: 6px;
   cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
 }
 
 .pet-card button:hover {
   background-color: #e64a19;
 }
 
-/* Favoritos */
-#favorites {
-  background-color: #fce4ec;
-  padding: 20px;
-}
-
-#favorites h2 {
-  margin-bottom: 10px;
-}
-
-#favorites ul {
-  list-style: none;
-  padding: 0;
-}
-
-#favorites li {
-  margin: 5px 0;
-  font-weight: bold;
-}
-
-/* Formulario */
-#adoption-form {
-  padding: 40px 20px;
-  background-color: #fff;
-}
-
-#adoption-form form {
-  max-width: 500px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-}
-
-#adoption-form input,
-#adoption-form select,
-#adoption-form textarea {
-  margin-bottom: 15px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-#adoption-form button {
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  padding: 12px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#adoption-form button:hover {
-  background-color: #388e3c;
+/* Hover en la tarjeta */
+.pet-card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
 }

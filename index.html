@@ -1,21 +1,58 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página Interactiva</title>
-</head>
-<body>
-  <header>
-    <!-- Aqui trabaja Adrian -->
-  </header>
+<main>
+  <!-- Banner principal -->
+  <section id="hero">
+    <h1>Ellos también merecen un hogar 🐾</h1>
+    <p>Adopta una mascota y dale una segunda oportunidad a una vida llena de amor.</p>
+    <img src="imagenes/titulo.jpg" alt="Perro y gato juntos">
+  </section>
 
-  <main>
-    <!-- Aqui trabaja Felipe -->
-  </main>
+  <!-- Mascotas disponibles -->
+  <section id="pets">
+    <h2>Mascotas disponibles</h2>
+    <div class="pet-card">
+      <img src="imagenes/perro1.jpg" alt="Max">
+      <h3>Max</h3>
+      <p>Perro | 2 años | Mediano | Macho</p>
+      <button>Ver más</button>
+    </div>
+    <div class="pet-card">
+      <img src="imagenes/gato1.jpg" alt="Luna">
+      <h3>Luna</h3>
+      <p>Gato | 1 año | Pequeño | Hembra</p>
+      <button>Ver más</button>
+    </div>
+    <!-- Más tarjetas -->
+  </section>
 
-  <footer>
-    <!-- Aqui trabaja Andrea -->
-  </footer>
-</body>
-</html>
+  <!-- Favoritos -->
+  <aside id="favorites">
+    <h2>❤️ Tus favoritos</h2>
+    <ul>
+      <li>Luna</li>
+      <li>Rocky</li>
+      <li>Milo</li>
+    </ul>
+  </aside>
+
+  <!-- Formulario de adopción -->
+  <section id="adoption-form">
+    <h2>Formulario de adopción</h2>
+    <form>
+      <input type="text" placeholder="Nombre completo" required>
+      <input type="email" placeholder="Correo electrónico" required>
+      <input type="tel" placeholder="Teléfono" required>
+      <select required>
+        <option value="">¿Qué mascota te interesa?</option>
+        <option value="max">Max</option>
+        <option value="luna">Luna</option>
+      </select>
+      <textarea placeholder="Cuéntanos un poco sobre ti y tu hogar" required></textarea>
+      <button type="submit">Enviar solicitud</button>
+    </form>
+  </section>
+
+  <!-- Galería -->
+  <section id="gallery">
+    <h2>Galería de fotos</h2>
+    <div class="gallery">
+      <img src="imagenes/gato2.jpg" alt="Gato">

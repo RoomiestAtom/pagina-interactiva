@@ -1,16 +1,15 @@
-/* Estilos generales */
+/* General */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
   background-color: #f9f9f9;
   color: #333;
 }
 
-/* Banner principal */
+/* Banner */
 #hero {
   text-align: center;
-  background-color: #ffe0b2;
+  background: linear-gradient(135deg, #ffe0b2, #ffcc80);
   padding: 40px 20px;
 }
 
@@ -21,34 +20,23 @@ body {
 
 #hero p {
   font-size: 1.2em;
-  margin-bottom: 20px;
 }
 
-#hero img {
-  max-width: 100%;
-  border-radius: 10px;
-}
-
-/* Sección de mascotas */
+/* Mascotas en cuadrícula */
 #pets {
   padding: 40px 20px;
-  background-color: #fff;
-}
-
-#pets h2 {
-  text-align: center;
-  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
 }
 
 .pet-card {
-  display: inline-block;
-  width: 250px;
-  margin: 15px;
-  padding: 15px;
-  background-color: #f1f1f1;
+  background: #fff;
   border-radius: 10px;
   text-align: center;
+  padding: 15px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .pet-card img {
@@ -56,8 +44,9 @@ body {
   border-radius: 10px;
 }
 
-.pet-card h3 {
-  margin: 10px 0;
+.pet-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .pet-card button {
@@ -93,20 +82,15 @@ body {
   font-weight: bold;
 }
 
-/* Formulario de adopción */
+/* Formulario */
 #adoption-form {
   padding: 40px 20px;
   background-color: #fff;
 }
 
-#adoption-form h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
 #adoption-form form {
   max-width: 500px;
-  margin: 0 auto;
+  margin: auto;
   display: flex;
   flex-direction: column;
 }
@@ -131,28 +115,4 @@ body {
 
 #adoption-form button:hover {
   background-color: #388e3c;
-}
-
-/* Galería */
-#gallery {
-  padding: 40px 20px;
-  background-color: #fff;
-}
-
-#gallery h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.gallery img {
-  width: 200px;
-  margin: 10px;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }

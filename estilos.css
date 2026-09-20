@@ -1,0 +1,158 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Banner principal */
+#hero {
+  text-align: center;
+  background-color: #ffe0b2;
+  padding: 40px 20px;
+}
+
+#hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+#hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+#hero img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Sección de mascotas */
+#pets {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+#pets h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.pet-card {
+  display: inline-block;
+  width: 250px;
+  margin: 15px;
+  padding: 15px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.pet-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.pet-card h3 {
+  margin: 10px 0;
+}
+
+.pet-card button {
+  background-color: #ff7043;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pet-card button:hover {
+  background-color: #e64a19;
+}
+
+/* Favoritos */
+#favorites {
+  background-color: #fce4ec;
+  padding: 20px;
+}
+
+#favorites h2 {
+  margin-bottom: 10px;
+}
+
+#favorites ul {
+  list-style: none;
+  padding: 0;
+}
+
+#favorites li {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+/* Formulario de adopción */
+#adoption-form {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+#adoption-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#adoption-form form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#adoption-form input,
+#adoption-form select,
+#adoption-form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#adoption-form button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#adoption-form button:hover {
+  background-color: #388e3c;
+}
+
+/* Galería */
+#gallery {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+#gallery h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}

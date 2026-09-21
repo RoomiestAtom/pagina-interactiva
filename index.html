@@ -3,18 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="estilos.css">
   <title>Huellas de Amor</title>
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Fuentes Google: Quicksand y Caveat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Quicksand:wght@500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <!-- ===== HEADER / NAVBAR ===== -->
-<header class="header">
+
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header class="header">
     <nav class="navbar">
         
         <!-- Logo -->
         <div class="logo">
-            <!-- Icono de huella (puedes usar una imagen PNG/SVG) -->
-            <img src="img/paw-icon.png" alt="Huella" class="logo-icon">
+            <!-- Icono de huella -->
+            <img src="imagenes/huellas.png" alt="Huella" class="logo-icon">
             <div class="logo-text">
                 <span class="brand-name">Huellas de Amor</span>
                 <span class="tagline">Adopta · Cuida · Cambia una vida</span>
@@ -50,9 +60,58 @@
         </div>
 
     </nav>
-</header>
+  </header>
 
-    <!-- Aqui trabaja Adrian -->
+  <!-- ===== AQUI TRABAJA ADRIAN ===== -->
+  <section class="hero-banner">
+    
+    <!-- Manchas decorativas de fondo -->
+    <div class="bg-shape-left"></div>
+    <div class="bg-shape-right"></div>
+    
+    <div class="hero-container">
+      
+      <!-- Contenido Izquierdo -->
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Ellos también<br>
+          merecen un <span class="highlight-hogar">hogar <span class="heart-outline">♡</span></span>
+        </h1>
+        
+        <p class="hero-subtitle">
+          Adopta una mascota y dale una segunda<br>
+          oportunidad a una vida llena de amor.
+        </p>
+
+        <a href="#mascotas" class="btn-ver-mascotas">
+          <i class="fas fa-paw btn-paw-icon"></i>
+          <span>Ver mascotas</span>
+          <i class="fas fa-arrow-right btn-arrow-icon"></i>
+        </a>
+      </div>
+
+      <!-- Contenido Derecho (Imagen del perro y gato) -->
+      <div class="hero-image-wrapper">
+        <div class="hero-image-box">
+          <!-- Coloca la imagen de las mascotas guardada en tu carpeta 'imagenes' -->
+          <img src="imagenes/banner-mascotas.png" alt="Perro y gato en adopción" class="hero-mascotas-img">
+
+          <!-- Corazón flotante pequeño -->
+          <div class="floating-heart-left">♡</div>
+
+          <!-- Texto manuscrito sobre la imagen -->
+          <div class="handwritten-badge">
+            <span>Una adopción<br>cambia dos vidas</span>
+            <div class="paw-subicon-wrap">
+              <i class="fas fa-paw paw-subicon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- ===== FIN SECCIÓN ADRIAN ===== -->
 
   <main>
     <!-- Aqui trabaja Felipe -->
@@ -61,5 +120,6 @@
   <footer>
     <!-- Aqui trabaja Andrea -->
   </footer>
+
 </body>
 </html>

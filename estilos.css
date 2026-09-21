@@ -1,18 +1,20 @@
- /* =========================================
+/* =========================================
    HUELLAS DE AMOR - HOJA DE ESTILOS (estilos.css)
    ========================================= */
 
-/* --- Reset General --- */
+/* --- Reset Básico --- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Quicksand', 'Segoe UI', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 body {
     background-color: #f7f4ed;
     color: #263b3d;
+    width: 1200px;
+    margin: 0 auto;
     overflow-x: hidden;
 }
 
@@ -23,8 +25,8 @@ body {
 .header {
     width: 100%;
     height: 70px;
-    background-color: #e8d6c5;
-    box-shadow: 0 1px 4px rgba(207, 6, 6, 0.04);
+    background-color: #fcfbfa;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -48,21 +50,18 @@ body {
     min-width: 250px;
 }
 
-/* Imagen de la huella */
 .logo-icon {
     width: 43px;
     height: 43px;
     object-fit: contain;
 }
 
-/* Contenedor del texto */
 .logo-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-/* Nombre */
 .brand-name {
     font-size: 19px;
     font-weight: 800;
@@ -70,7 +69,6 @@ body {
     line-height: 1.1;
 }
 
-/* Eslogan */
 .tagline {
     margin-top: 4px;
     font-size: 10px;
@@ -79,10 +77,7 @@ body {
     letter-spacing: 0.2px;
 }
 
-/* =========================
-   MENÚ
-========================= */
-
+/* Menú */
 .nav-links {
     display: flex;
     align-items: center;
@@ -109,20 +104,11 @@ body {
     transition: color 0.2s ease;
 }
 
-/* Hover */
-.nav-links a:hover {
-    color: #3d7a60;
-}
-
-/* =========================
-   ENLACE ACTIVO
-========================= */
-
+.nav-links a:hover,
 .nav-links a.active {
     color: #3d7a60;
 }
 
-/* Línea verde debajo de Inicio */
 .nav-links a.active::after {
     content: "";
     position: absolute;
@@ -134,10 +120,7 @@ body {
     border-radius: 3px 3px 0 0;
 }
 
-/* =========================
-   ICONOS
-========================= */
-
+/* Iconos de Acción */
 .nav-actions {
     display: flex;
     align-items: center;
@@ -146,7 +129,6 @@ body {
     justify-content: flex-end;
 }
 
-/* Botones */
 .icon-btn {
     position: relative;
     width: 34px;
@@ -159,18 +141,7 @@ body {
     color: #263b3d;
     cursor: pointer;
     font-size: 17px;
-    transition: all 0.2s ease;
 }
-
-/* Hover */
-.icon-btn:hover {
-    color: #3d7a60;
-    transform: translateY(-1px);
-}
-
-/* =========================
-   CONTADOR FAVORITOS
-========================= */
 
 .badge {
     position: absolute;
@@ -190,296 +161,107 @@ body {
 }
 
 /* =========================================
-   SECCIÓN ADRIAN (BANNER HERO)
+   SECCIÓN BANNER DE BIENVENIDA (ADRIÁN)
    ========================================= */
 
-.hero-banner {
-    position: relative;
-    background-color: #f7f4ed;
-    min-height: 480px;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    padding: 30px 0;
-}
-
-/* Manchas orgánicas de fondo */
-.bg-shape-left {
-    position: absolute;
-    left: -60px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 340px;
-    height: 340px;
-    background-color: #ebdcc9;
-    border-radius: 50%;
-    opacity: 0.5;
-    filter: blur(40px);
-    z-index: 1;
-}
-
-.bg-shape-right {
-    position: absolute;
-    right: -50px;
-    bottom: -50px;
-    width: 320px;
-    height: 320px;
-    background-color: #ebdcc9;
-    border-radius: 50%;
-    opacity: 0.5;
-    filter: blur(40px);
-    z-index: 1;
-}
-
-/* Contenedor Grid Principal */
-.hero-container {
-    max-width: 1240px;
+.banner {
     width: 100%;
+    background-color: #f7f4ed;
+    padding: 40px 0;
+}
+
+.banner-contenedor {
+    max-width: 1240px;
     margin: 0 auto;
     padding: 0 30px;
-    display: grid;
-    grid-template-columns: 1fr 1.35fr;
-    gap: 30px;
-    align-items: center;
-    position: relative;
-    z-index: 5;
-}
-
-/* Contenido Izquierdo */
-.hero-content {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    gap: 40px;
 }
 
-.hero-title {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 52px;
+/* Columna de Texto (Izquierda) */
+.columna-texto {
+    flex: 1;
+}
+
+.titulo {
+    font-size: 48px;
     font-weight: 800;
     color: #1e352f;
     line-height: 1.15;
-    margin-bottom: 22px;
-    letter-spacing: -0.5px;
+    margin-bottom: 20px;
 }
 
-.highlight-hogar {
-    font-family: 'Caveat', 'Dancing Script', cursive;
+.palabra-hogar {
+    font-family: 'Caveat', cursive;
     color: #3d7a60;
-    font-size: 64px;
+    font-size: 60px;
     font-weight: 700;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    position: relative;
 }
 
-.heart-outline {
+.corazon-icono {
     font-family: sans-serif;
-    font-size: 32px;
+    font-size: 30px;
     color: #3d7a60;
-    font-weight: 400;
-    transform: translateY(-6px);
 }
 
-.hero-subtitle {
-    font-size: 17px;
-    font-weight: 500;
+.subtitulo {
+    font-size: 16px;
     color: #59686a;
     line-height: 1.5;
-    margin-bottom: 34px;
+    margin-bottom: 30px;
 }
 
-/* Botón Ver Mascotas */
-.btn-ver-mascotas {
+/* Botón Verde */
+.boton-verde {
     display: inline-flex;
     align-items: center;
-    gap: 14px;
+    gap: 12px;
     background-color: #3d7a60;
-    color: #ffffff;
+    color: white;
     text-decoration: none;
     font-size: 16px;
     font-weight: 700;
-    padding: 15px 32px;
+    padding: 14px 30px;
     border-radius: 50px;
-    box-shadow: 0 6px 18px rgba(61, 122, 96, 0.28);
-    transition: all 0.25s ease;
+    transition: background-color 0.2s ease;
 }
 
-.btn-ver-mascotas:hover {
-    background-color: #2e614c;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(61, 122, 96, 0.38);
+.boton-verde:hover {
+    background-color: #2b5744;
 }
 
-.btn-paw-icon {
-    font-size: 18px;
+/* Columna de la Imagen (Derecha) */
+.columna-imagen {
+    flex: 1.5;
 }
 
-.btn-arrow-icon {
-    font-size: 15px;
-    transition: transform 0.2s ease;
-}
-
-.btn-ver-mascotas:hover .btn-arrow-icon {
-    transform: translateX(4px);
-}
-
-/* Contenido Derecho (Imagen Mascota) */
-.hero-image-wrapper {
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.hero-image-box {
+.caja-foto {
     position: relative;
     width: 100%;
-    max-width: 680px;
 }
 
-.hero-mascotas-img {
+.foto-perro {
     width: 100%;
-    height: auto;
-    max-height: 440px;
+    height: 400px;
     object-fit: cover;
     border-radius: 24px;
     display: block;
 }
 
-/* Corazón flotante */
-.floating-heart-left {
+/* Frase manuscrita flotante */
+.frase-flotante {
     position: absolute;
-    left: -10px;
-    top: 55%;
-    font-size: 26px;
-    color: #ffffff;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-    font-weight: 600;
-}
-
-/* Texto Manuscrito */
-.handwritten-badge {
-    position: absolute;
-    right: 35px;
     top: 38%;
-    color: #ffffff;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    right: 35px;
+    color: white;
     font-family: 'Caveat', cursive;
-    text-align: center;
-    line-height: 1.25;
-    z-index: 6;
-}
-
-.handwritten-badge span {
     font-size: 28px;
     font-weight: 700;
-    display: block;
+    text-align: center;
+    line-height: 1.25;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
 }
 
-.paw-subicon-wrap {
-    margin-top: 2px;
-}
 
-.paw-subicon {
-    font-size: 16px;
-    opacity: 0.95;
-}
 
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media (max-width: 900px) {
-
-    .navbar {
-        padding: 0 18px;
-    }
-
-    .logo {
-        min-width: auto;
-    }
-
-    .nav-links {
-        gap: 18px;
-    }
-
-    .nav-links a {
-        font-size: 11px;
-    }
-
-    .brand-name {
-        font-size: 17px;
-    }
-
-    .tagline {
-        font-size: 9px;
-    }
-
-    .hero-container {
-        grid-template-columns: 1fr;
-        gap: 30px;
-        text-align: center;
-    }
-
-    .hero-content {
-        align-items: center;
-    }
-
-    .hero-title {
-        font-size: 40px;
-    }
-
-    .highlight-hogar {
-        font-size: 50px;
-    }
-
-    .hero-image-box {
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 700px) {
-
-    .header {
-        height: 62px;
-    }
-
-    .nav-links {
-        display: none;
-    }
-
-    .navbar {
-        justify-content: space-between;
-    }
-
-    .nav-actions {
-        min-width: auto;
-    }
-
-    .logo-icon {
-        width: 38px;
-        height: 38px;
-    }
-
-    .brand-name {
-        font-size: 16px;
-    }
-
-    .tagline {
-        font-size: 8px;
-    }
-
-    .hero-title {
-        font-size: 32px;
-    }
-
-    .highlight-hogar {
-        font-size: 40px;
-    }
-
-    .handwritten-badge span {
-        font-size: 22px;
-    }
-}
-  

@@ -139,3 +139,445 @@ body {
 #adoption-form button:hover {
   background-color: #388e3c;
 }
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Banner principal */
+#hero {
+  text-align: center;
+  background-color: #ffe0b2;
+  padding: 40px 20px;
+}
+
+#hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+#hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+#hero img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Sección de mascotas */
+#pets {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+#pets h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.pet-card {
+  display: inline-block;
+  width: 250px;
+  margin: 15px;
+  padding: 15px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.pet-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.pet-card h3 {
+  margin: 10px 0;
+}
+
+.pet-card button {
+  background-color: #ff7043;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pet-card button:hover {
+  background-color: #e64a19;
+}
+
+/* Favoritos */
+#favorites {
+  background-color: #fce4ec;
+  padding: 20px;
+}
+
+#favorites h2 {
+  margin-bottom: 10px;
+}
+
+#favorites ul {
+  list-style: none;
+  padding: 0;
+}
+
+#favorites li {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+/* Formulario de adopción */
+#adoption-form {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+#adoption-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#adoption-form form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#adoption-form input,
+#adoption-form select,
+#adoption-form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#adoption-form button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#adoption-form button:hover {
+  background-color: #388e3c;
+}
+
+/* Galería */
+#gallery {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+#gallery h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+/*FOOTER*/
+
+/*Formulario*/
+.formulario-adopcion {
+    width: 80%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #8fb486;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.formulario-adopcion h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.formulario-adopcion form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-adopcion label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.formulario-adopcion input,
+.formulario-adopcion select,
+.formulario-adopcion textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.formulario-adopcion textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.formulario-adopcion button {
+    margin-top: 25px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/*Información*/
+
+.footer-huellas {
+    background-color: #8fb486;
+    color: white;
+
+    padding: 40px 6% 20px;
+    margin-top: 35px;
+
+    /* Bordes irregulares */
+    border-radius: 70px 20px 55px 30px;
+}
+
+
+/* Parte superior */
+.footer-contenido {
+    position: relative;
+
+    min-height: 145px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* Centro */
+
+.footer-contenido > h1 {
+    position: absolute;
+
+    top: 20px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    margin: 0;
+
+    font-size: 26px;
+    text-align: center;
+}
+
+.footer-contenido > p {
+    position: absolute;
+
+    top: 65px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 280px;
+
+    margin: 0;
+
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+
+.footer-marca {
+    position: absolute;
+
+    left: 7%;
+    top: 10px;
+
+    width: 230px;
+
+    text-align: center;
+}
+
+.footer-marca h1 {
+    margin: 0;
+}
+
+.footer-marca h1:first-child {
+    font-size: 32px;
+}
+
+.footer-marca h1:nth-child(2) {
+    font-size: 20px;
+
+    margin: 4px 0;
+}
+
+.footer-marca p {
+    font-size: 13px;
+
+    margin: 0;
+}
+
+
+/* Ayuda*/
+
+.footer-columna {
+    position: absolute;
+
+    right: 7%;
+    top: 10px;
+
+    width: 230px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+.footer-columna h3 {
+    font-size: 18px;
+
+    margin: 0 0 8px;
+}
+
+.footer-columna a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    margin: 3px 0;
+
+    transition: transform 0.2s ease;
+}
+
+.footer-columna a:hover {
+    transform: translateX(3px);
+
+    text-decoration: underline;
+}
+
+
+/* Redes sociales*/
+
+.footer-redes {
+    text-align: center;
+
+    margin-top: 25px;
+}
+
+.footer-redes h2 {
+    font-size: 18px;
+
+    margin-bottom: 12px;
+}
+
+.footer-redes a {
+    color: white;
+
+    text-decoration: none;
+
+    display: inline-block;
+
+    margin: 0 7px;
+
+    transition: transform 0.3s ease;
+}
+
+.footer-redes svg {
+    width: 23px;
+    height: 23px;
+
+    transition: transform 0.3s ease;
+}
+
+.footer-redes a:hover {
+    transform: translateY(-4px) scale(1.2);
+}
+
+
+/* Informacion */
+
+.footer-info {
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+.footer-info p {
+    font-size: 13px;
+
+    margin: 6px 0;
+}
+
+.footer-info a {
+    color: white;
+
+    text-decoration: none;
+
+    display: inline-block;
+
+    transition: transform 0.2s ease;
+}
+
+.footer-info a:hover {
+    transform: scale(1.1);
+}
+
+.footer-info svg {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+.footer-final {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+
+    margin-top: 22px;
+
+    padding-top: 12px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.footer-final p {
+    font-size: 11px;
+
+    margin: 0;
+}

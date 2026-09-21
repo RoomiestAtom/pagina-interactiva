@@ -581,3 +581,270 @@ body {
 
     margin: 0;
 }
+/* =========================================
+   HUELLAS DE AMOR - HOJA DE ESTILOS (estilos.css)
+   ========================================= */
+
+/* --- Reset Básico --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background-color: #f7f4ed;
+    color: #263b3d;
+    width: 1200px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+/* =========================================
+   HEADER / NAVBAR
+   ========================================= */
+
+.header {
+    width: 100%;
+    height: 70px;
+    background-color: #fcfbfa;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1240px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 250px;
+}
+
+.logo-icon {
+    width: 43px;
+    height: 43px;
+    object-fit: contain;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.brand-name {
+    font-size: 19px;
+    font-weight: 800;
+    color: #263b3d;
+    line-height: 1.1;
+}
+
+.tagline {
+    margin-top: 4px;
+    font-size: 10px;
+    font-weight: 500;
+    color: #697878;
+    letter-spacing: 0.2px;
+}
+
+/* Menú */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    height: 100%;
+}
+
+.nav-links li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+    color: #59686a;
+    font-size: 13px;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #3d7a60;
+}
+
+.nav-links a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    background-color: #3d7a60;
+    border-radius: 3px 3px 0 0;
+}
+
+/* Iconos de Acción */
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    min-width: 150px;
+    justify-content: flex-end;
+}
+
+.icon-btn {
+    position: relative;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    color: #263b3d;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.badge {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: 17px;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #e85d5d;
+    color: white;
+    font-size: 9px;
+    font-weight: 700;
+    border: 2px solid white;
+}
+
+/* =========================================
+   SECCIÓN BANNER DE BIENVENIDA (ADRIÁN)
+   ========================================= */
+
+.banner {
+    width: 100%;
+    background-color: #f7f4ed;
+    padding: 40px 0;
+}
+
+.banner-contenedor {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Columna de Texto (Izquierda) */
+.columna-texto {
+    flex: 1;
+}
+
+.titulo {
+    font-size: 48px;
+    font-weight: 800;
+    color: #1e352f;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.palabra-hogar {
+    font-family: 'Caveat', cursive;
+    color: #3d7a60;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.corazon-icono {
+    font-family: sans-serif;
+    font-size: 30px;
+    color: #3d7a60;
+}
+
+.subtitulo {
+    font-size: 16px;
+    color: #59686a;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/* Botón Verde */
+.boton-verde {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #3d7a60;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 14px 30px;
+    border-radius: 50px;
+    transition: background-color 0.2s ease;
+}
+
+.boton-verde:hover {
+    background-color: #2b5744;
+}
+
+/* Columna de la Imagen (Derecha) */
+.columna-imagen {
+    flex: 1.5;
+}
+
+.caja-foto {
+    position: relative;
+    width: 100%;
+}
+
+.foto-perro {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 24px;
+    display: block;
+}
+
+/* Frase manuscrita flotante */
+.frase-flotante {
+    position: absolute;
+    top: 38%;
+    right: 35px;
+    color: white;
+    font-family: 'Caveat', cursive;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.25;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+
+

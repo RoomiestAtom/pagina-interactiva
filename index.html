@@ -5,18 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Huellas de Amor</title>
   <!-- Conexión al CSS -->
+
+  <!-- FontAwesome Icons (para los iconos de búsqueda, corazón, usuario y huellita) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Tipografías de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Quicksand:wght@600;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-  <header>
-    <!-- ===== HEADER / NAVBAR ===== -->
-<header class="header">
+
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header class="header">
     <nav class="navbar">
         
         <!-- Logo -->
         <div class="logo">
-            <!-- Icono de huella (puedes usar una imagen PNG/SVG) -->
-            <img src="img/paw-icon.png" alt="Huella" class="logo-icon">
+            <!-- Icono de huella (si no tienes la imagen local, usa la huellita de respaldo) -->
+            <img src="imagenes/huellas.png" alt="Huella" class="logo-icon" onerror="this.onerror=null; this.src='https://cdn-icons-png.flaticon.com/512/616/616408.png';">
             <div class="logo-text">
                 <span class="brand-name">Huellas de Amor</span>
                 <span class="tagline">Adopta · Cuida · Cambia una vida</span>
@@ -52,11 +61,45 @@
         </div>
 
     </nav>
-</header>
-
-    <!-- Aqui trabaja Adrian -->
   </header>
+  <section class="banner">
+    <div class="banner-contenedor">
+      
+      <!-- Contenido Izquierdo (Texto y Botón) -->
+      <div class="columna-texto">
+        <h1 class="titulo">
+          Ellos también<br>
+          merecen un <span class="palabra-hogar">hogar <span class="corazon-icono">♡</span></span>
+        </h1>
 
+        <p class="subtitulo">
+          Adopta una mascota y dale una segunda<br>
+          oportunidad a una vida llena de amor.
+        </p>
+
+        <a href="#mascotas" class="boton-verde">
+          <i class="fas fa-paw"></i> Ver mascotas <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <!-- Contenido Derecho (Imagen y Texto manuscrito) -->
+      <div class="columna-imagen">
+        <div class="caja-foto">
+          <!-- Si la imagen local imagenes/banner-mascotas.png aún no existe, cargará automáticamente la foto de muestra -->
+          <img src="imagenes/titulo.jpg" 
+               alt="Perro y gato en adopción" 
+               class="foto-perro" 
+               onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1548767797-d8c844163c4c?auto=format&fit=crop&w=1200&q=80';">
+
+          <!-- Texto manuscrito sobre la imagen -->
+          <div class="frase-flotante">
+            Una adopción<br>cambia dos vidas 🐾
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
   <!-- Mascotas disponibles -->
   <section id="pets">
     <h2>Mascotas disponibles</h2>
@@ -93,6 +136,10 @@
       </div>
     </div>
   </section>
+  <!-- ===== AQUI TRABAJA ADRIAN ===== -->
+
+  <!-- ===== FIN SECCIÓN ADRIAN ===== -->
+
 
   <!-- Formulario de adopción -->
   <section id="adoption-form">
@@ -224,5 +271,6 @@
     </div>
 
   </footer>
+
 </body>
 </html>

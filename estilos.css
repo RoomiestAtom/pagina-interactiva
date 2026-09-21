@@ -24,6 +24,7 @@ body {
 /* Sección de mascotas */
 #pets {
   padding: 40px 20px;
+
 }
 
 #pets h2 {
@@ -140,13 +141,13 @@ body {
   background-color: #388e3c;
 }
 /* Estilos generales */
-body {
+/* body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f9f9f9;
   color: #333;
-}
+} */
 
 /* Banner principal */
 #hero {
@@ -168,12 +169,6 @@ body {
 #hero img {
   max-width: 100%;
   border-radius: 10px;
-}
-
-/* Sección de mascotas */
-#pets {
-  padding: 40px 20px;
-  background-color: #fff;
 }
 
 #pets h2 {
@@ -596,7 +591,7 @@ body {
 body {
     background-color: #f7f4ed;
     color: #263b3d;
-    width: 1200px;
+    /* width: 1200px; */
     margin: 0 auto;
     overflow-x: hidden;
 }
@@ -749,7 +744,6 @@ body {
 
 .banner {
     width: 100%;
-    background-color: #f7f4ed;
     padding: 40px 0;
 }
 
